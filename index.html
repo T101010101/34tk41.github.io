@@ -6,153 +6,178 @@
     <title>Competitive Programming: My Progress</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            margin: 20px auto;
+            max-width: 900px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
+            margin-top: 20px;
         }
         th, td {
-            border: 1px solid #ccc;
+            padding: 12px;
             text-align: left;
-            padding: 8px;
+            border-bottom: 1px solid #ddd;
         }
         th {
             background-color: #f4f4f4;
+            color: #555;
         }
-        .url-box {
-            width: 100%;
-            padding: 5px;
-            font-size: 14px;
+        tr:hover {
+            background-color: #f1f1f1;
         }
-        .total {
+        .link-button {
+            display: inline-block;
+            text-decoration: none;
+            color: #4CAF50;
+            border: 1px solid #4CAF50;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .link-button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .total-row {
             font-weight: bold;
+            background-color: #f4f4f4;
         }
     </style>
 </head>
 <body>
-    <h1>Competitive Programming: My Progress</h1>
-    <p>Since 2022/08/19</p>
-    <table>
-        <thead>
-            <tr>
-                <th>SiteName</th>
-                <th>Url</th>
-                <th>UserName</th>
-                <th>AC count</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Aizu Online Judge</td>
-                <td><input type="url" class="url-box" placeholder="https://onlinejudge.u-aizu.ac.jp/status/users/T341"></td>
-                <td>T341</td>
-                <td>442</td>
-            </tr>
-            <tr>
-                <td>Algo-method</td>
-                <td><input type="url" class="url-box" placeholder="https://algo-method.com/users/QifEmt9FP0258x03"></td>
-                <td>T101010101</td>
-                <td>574</td>
-            </tr>
-            <tr>
-                <td>AtCoder</td>
-                <td><input type="url" class="url-box" placeholder="https://kenkoooo.com/atcoder/#/user/T101010101?userPageTab=Achievement"></td>
-                <td>T101010101</td>
-                <td>2704</td>
-            </tr>
-            <tr>
-                <td>Baekjoon Online Judge</td>
-                <td><input type="url" class="url-box" placeholder="https://solved.ac/ja/profile/t101010101"></td>
-                <td>t101010101</td>
-                <td>640</td>
-            </tr>
-            <tr>
-                <td>CodeChef</td>
-                <td><input type="url" class="url-box" placeholder="https://www.codechef.com/users/t101010101"></td>
-                <td>t101010101</td>
-                <td>11</td>
-            </tr>
-            <tr>
-                <td>Codeforces</td>
-                <td><input type="url" class="url-box" placeholder="https://cf.kira924age.com/#/user/T101010101"></td>
-                <td>T101010101</td>
-                <td>133</td>
-            </tr>
-            <tr>
-                <td>CSES Problem Set</td>
-                <td><input type="url" class="url-box" placeholder="https://cses.fi/problemset/user/239035/"></td>
-                <td>T101010101</td>
-                <td>222</td>
-            </tr>
-            <tr>
-                <td>Hamako Online Judge</td>
-                <td><input type="url" class="url-box" placeholder="https://hoj.hamako-ths.ed.jp/onlinejudge/users/id/1250"></td>
-                <td>T101010101</td>
-                <td>72</td>
-            </tr>
-            <tr>
-                <td>LeetCode</td>
-                <td><input type="url" class="url-box" placeholder="https://leetcode.com/u/T101010101/"></td>
-                <td>T101010101</td>
-                <td>212</td>
-            </tr>
-            <tr>
-                <td>Library Checker</td>
-                <td><input type="url" class="url-box" placeholder="https://judge.yosupo.jp/ranking"></td>
-                <td>T101010101</td>
-                <td>69</td>
-            </tr>
-            <tr>
-                <td>Libre Online Judge</td>
-                <td><input type="url" class="url-box" placeholder="https://loj.ac/u/T101010101"></td>
-                <td>T101010101</td>
-                <td>54</td>
-            </tr>
-            <tr>
-                <td>mofecoder</td>
-                <td><input type="url" class="url-box" placeholder=""></td>
-                <td>T101010101</td>
-                <td>93</td>
-            </tr>
-            <tr>
-                <td>MojaCoder</td>
-                <td><input type="url" class="url-box" placeholder=""></td>
-                <td>T341</td>
-                <td>312</td>
-            </tr>
-            <tr>
-                <td>Online Math Contest</td>
-                <td><input type="url" class="url-box" placeholder=""></td>
-                <td>T341</td>
-                <td>250</td>
-            </tr>
-            <tr>
-                <td>Project Euler</td>
-                <td><input type="url" class="url-box" placeholder=""></td>
-                <td>T101010101</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>Sphere Online Judge</td>
-                <td><input type="url" class="url-box" placeholder="https://www.spoj.com/users/t101010101/"></td>
-                <td>t101010101</td>
-                <td>107</td>
-            </tr>
-            <tr>
-                <td>yukicoder</td>
-                <td><input type="url" class="url-box" placeholder="https://iilj.github.io/yukicoder-problems/#/user/name/T101010101"></td>
-                <td>T101010101</td>
-                <td>563</td>
-            </tr>
-            <tr class="total">
-                <td colspan="3">Total</td>
-                <td>6549</td>
-            </tr>
-        </tbody>
-    </table>
+    <header>
+        <h1>Competitive Programming: My Progress</h1>
+        <p>Since 2022/08/19</p>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>SiteName</th>
+                    <th>Url</th>
+                    <th>AC count</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr>
+                    <td>Aizu Online Judge</td>
+                    <td><a class="link-button" href="https://onlinejudge.u-aizu.ac.jp/status/users/T341" target="_blank">Visit</a></td>
+                    <td class="ac-count">442</td>
+                </tr>
+                <tr>
+                    <td>Algo-method</td>
+                    <td><a class="link-button" href="https://algo-method.com/users/QifEmt9FP0258x03" target="_blank">Visit</a></td>
+                    <td class="ac-count">574</td>
+                </tr>
+                <tr>
+                    <td>AtCoder</td>
+                    <td><a class="link-button" href="https://kenkoooo.com/atcoder/#/user/T101010101?userPageTab=Achievement" target="_blank">Visit</a></td>
+                    <td class="ac-count">2704</td>
+                </tr>
+                <tr>
+                    <td>Baekjoon Online Judge</td>
+                    <td><a class="link-button" href="https://solved.ac/ja/profile/t101010101" target="_blank">Visit</a></td>
+                    <td class="ac-count">640</td>
+                </tr>
+                <tr>
+                    <td>CodeChef</td>
+                    <td><a class="link-button" href="https://www.codechef.com/users/t101010101" target="_blank">Visit</a></td>
+                    <td class="ac-count">11</td>
+                </tr>
+                <tr>
+                    <td>Codeforces</td>
+                    <td><a class="link-button" href="https://cf.kira924age.com/#/user/T101010101" target="_blank">Visit</a></td>
+                    <td class="ac-count">133</td>
+                </tr>
+                <tr>
+                    <td>CSES Problem Set</td>
+                    <td><a class="link-button" href="https://cses.fi/problemset/user/239035/" target="_blank">Visit</a></td>
+                    <td class="ac-count">222</td>
+                </tr>
+                <tr>
+                    <td>Hamako Online Judge</td>
+                    <td><a class="link-button" href="https://hoj.hamako-ths.ed.jp/onlinejudge/users/id/1250" target="_blank">Visit</a></td>
+                    <td class="ac-count">72</td>
+                </tr>
+                <tr>
+                    <td>LeetCode</td>
+                    <td><a class="link-button" href="https://leetcode.com/u/T101010101/" target="_blank">Visit</a></td>
+                    <td class="ac-count">212</td>
+                </tr>
+                <tr>
+                    <td>Library Checker</td>
+                    <td><a class="link-button" href="https://judge.yosupo.jp/ranking" target="_blank">Visit</a></td>
+                    <td class="ac-count">69</td>
+                </tr>
+                <tr>
+                    <td>Libre Online Judge</td>
+                    <td><a class="link-button" href="https://loj.ac/u/T101010101" target="_blank">Visit</a></td>
+                    <td class="ac-count">54</td>
+                </tr>
+                <tr>
+                    <td>mofecoder</td>
+                    <td><a class="link-button" href="#" target="_blank">Visit</a></td>
+                    <td class="ac-count">93</td>
+                </tr>
+                <tr>
+                    <td>MojaCoder</td>
+                    <td><a class="link-button" href="#" target="_blank">Visit</a></td>
+                    <td class="ac-count">312</td>
+                </tr>
+                <tr>
+                    <td>Online Math Contest</td>
+                    <td><a class="link-button" href="#" target="_blank">Visit</a></td>
+                    <td class="ac-count">250</td>
+                </tr>
+                <tr>
+                    <td>Project Euler</td>
+                    <td><a class="link-button" href="#" target="_blank">Visit</a></td>
+                    <td class="ac-count">100</td>
+                </tr>
+                <tr>
+                    <td>Sphere Online Judge</td>
+                    <td><a class="link-button" href="https://www.spoj.com/users/t101010101/" target="_blank">Visit</a></td>
+                    <td class="ac-count">107</td>
+                </tr>
+                <tr>
+                    <td>yukicoder</td>
+                    <td><a class="link-button" href="https://iilj.github.io/yukicoder-problems/#/user/name/T101010101" target="_blank">Visit</a></td>
+                    <td class="ac-count">563</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="2">Total</td>
+                    <td id="total-ac"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const acCounts = document.querySelectorAll('.ac-count');
+            let total = 0;
+            acCounts.forEach(td => {
+                total += parseInt(td.textContent, 10);
+            });
+            document.getElementById('total-ac').textContent = total;
+        });
+    </script>
 </body>
 </html>
