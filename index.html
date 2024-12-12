@@ -56,9 +56,29 @@
             background-color: #4CAF50;
             color: white;
         }
+        .link-button.disabled {
+            display: inline-block;
+            text-decoration: none;
+            color: gray;
+            border: 1px solid gray;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: default;
+            pointer-events: none;
+        }
+        .link-button.disabled:hover {
+            background-color: #f1f1f1;
+        }
         .total-row {
             font-weight: bold;
             background-color: #f4f4f4;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 20px auto 0;
+            padding: 0 20px;
         }
     </style>
 </head>
@@ -66,115 +86,145 @@
     <header>
         <h1>T101010101's Competitive Programming Progress</h1>
     </header>
-    <p>Since 2022/08/19</p>
     <main>
         <table>
             <thead>
                 <tr>
-                    <th>Judge</th>
-                    <th>Url</th>
+                    <!-- <th></th> -->
+                    <th>Online Judge</th>
                     <th>AC Count</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody id="table-body">
                 <tr>
+                    <!-- <td><img src="images/aizu_logo.png" alt="Aizu Online Judge" width="30"></td> -->
                     <td>Aizu Online Judge</td>
-                    <td><a class="link-button" href="https://onlinejudge.u-aizu.ac.jp/status/users/T341" target="_blank">Visit</a></td>
                     <td class="ac-count">442</td>
+                    <td><a class="link-button" href="https://onlinejudge.u-aizu.ac.jp/status/users/T341" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/algo_method_logo.png" alt="Algo-method" width="30"></td> -->
                     <td>Algo-method</td>
-                    <td><a class="link-button" href="https://algo-method.com/users/QifEmt9FP0258x03" target="_blank">Visit</a></td>
                     <td class="ac-count">574</td>
+                    <td><a class="link-button" href="https://algo-method.com/users/QifEmt9FP0258x03" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/atcoder_logo.png" alt="AtCoder" width="30"></td> -->
                     <td>AtCoder</td>
-                    <td><a class="link-button" href="https://kenkoooo.com/atcoder/#/user/T101010101?userPageTab=Achievement" target="_blank">Visit</a></td>
                     <td class="ac-count">2704</td>
+                    <td><a class="link-button" href="https://kenkoooo.com/atcoder/#/user/T101010101?userPageTab=Achievement" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/baekjoon_logo.png" alt="Baekjoon Online Judge" width="30"></td> -->
                     <td>Baekjoon Online Judge</td>
-                    <td><a class="link-button" href="https://solved.ac/ja/profile/t101010101" target="_blank">Visit</a></td>
                     <td class="ac-count">640</td>
+                    <td><a class="link-button" href="https://solved.ac/ja/profile/t101010101" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/codechef_logo.png" alt="CodeChef" width="30"></td> -->
                     <td>CodeChef</td>
-                    <td><a class="link-button" href="https://www.codechef.com/users/t101010101" target="_blank">Visit</a></td>
                     <td class="ac-count">11</td>
+                    <td><a class="link-button" href="https://www.codechef.com/users/t101010101" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/codeforces_logo.png" alt="Codeforces" width="30"></td> -->
                     <td>Codeforces</td>
-                    <td><a class="link-button" href="https://cf.kira924age.com/#/user/T101010101" target="_blank">Visit</a></td>
                     <td class="ac-count">133</td>
+                    <td><a class="link-button" href="https://cf.kira924age.com/#/user/T101010101" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/cses_logo.png" alt="CSES Problem Set" width="30"></td> -->
                     <td>CSES Problem Set</td>
-                    <td><a class="link-button" href="https://cses.fi/problemset/user/239035/" target="_blank">Visit</a></td>
-                    <td class="ac-count">222</td>
+                    <td class="ac-count">221</td>
+                    <td><a class="link-button" href="https://cses.fi/problemset/user/239035/" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/hamako_logo.png" alt="Hamako Online Judge" width="30"></td> -->
                     <td>Hamako Online Judge</td>
-                    <td><a class="link-button" href="https://hoj.hamako-ths.ed.jp/onlinejudge/users/id/1250" target="_blank">Visit</a></td>
                     <td class="ac-count">72</td>
+                    <td><a class="link-button" href="https://hoj.hamako-ths.ed.jp/onlinejudge/users/id/1250" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/leetcode_logo.png" alt="LeetCode" width="30"></td> -->
                     <td>LeetCode</td>
-                    <td><a class="link-button" href="https://leetcode.com/u/T101010101/" target="_blank">Visit</a></td>
                     <td class="ac-count">212</td>
+                    <td><a class="link-button" href="https://leetcode.com/u/T101010101/" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/library_checker_logo.png" alt="Library Checker" width="30"></td> -->
                     <td>Library Checker</td>
-                    <td><a class="link-button" href="https://judge.yosupo.jp/ranking" target="_blank">Visit</a></td>
                     <td class="ac-count">69</td>
+                    <td><a class="link-button" href="https://judge.yosupo.jp/ranking" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/libre_logo.png" alt="Libre Online Judge" width="30"></td> -->
                     <td>Libre Online Judge</td>
-                    <td><a class="link-button" href="https://loj.ac/u/T101010101" target="_blank">Visit</a></td>
                     <td class="ac-count">54</td>
+                    <td><a class="link-button" href="https://loj.ac/u/T101010101" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/mofecoder_logo.png" alt="mofecoder" width="30"></td> -->
                     <td>mofecoder</td>
-                    <!-- <td><a class="link-button" href="#" target="_blank">Visit</a></td> -->
                     <td class="ac-count">93</td>
+                    <td><a class="link-button disabled">no Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/mojacoder_logo.png" alt="MojaCoder" width="30"></td> -->
                     <td>MojaCoder</td>
-                    <!-- <td><a class="link-button" href="#" target="_blank">Visit</a></td> -->
                     <td class="ac-count">312</td>
+                    <td><a class="link-button disabled">no Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/omc_logo.png" alt="Online Math Contest" width="30"></td> -->
                     <td>Online Math Contest</td>
-                    <!-- <td><a class="link-button" href="#" target="_blank">Visit</a></td> -->
                     <td class="ac-count">250</td>
+                    <td><a class="link-button disabled">no Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/project_euler_logo.png" alt="Project Euler" width="30"></td> -->
                     <td>Project Euler</td>
-                    <!-- <td><a class="link-button" href="#" target="_blank">Visit</a></td> -->
                     <td class="ac-count">100</td>
+                    <td><a class="link-button disabled">no Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/spoj_logo.ico" alt="Sphere Online Judge" width="30"></td> -->
                     <td>Sphere Online Judge</td>
-                    <td><a class="link-button" href="https://www.spoj.com/users/t101010101/" target="_blank">Visit</a></td>
                     <td class="ac-count">107</td>
+                    <td><a class="link-button" href="https://www.spoj.com/users/t101010101/" target="_blank">Link</a></td>
                 </tr>
                 <tr>
+                    <!-- <td><img src="images/tlx_logo.ico" alt="TLX" width="30"></td> -->
+                    <td>TLX</td>
+                    <td class="ac-count">1</td>
+                    <td><a class="link-button" href="https://tlx.toki.id/profiles/T101010101" target="_blank">Link</a></td>
+                </tr>
+                <tr>
+                    <!-- <td><img src="images/yukicoder_logo.png" alt="yukicoder" width="30"></td> -->
                     <td>yukicoder</td>
-                    <td><a class="link-button" href="https://iilj.github.io/yukicoder-problems/#/user/name/T101010101" target="_blank">Visit</a></td>
-                    <td class="ac-count">563</td>
+                    <td class="ac-count">564</td>
+                    <td><a class="link-button" href="https://iilj.github.io/yukicoder-problems/#/user/name/T101010101" target="_blank">Link</a></td>
                 </tr>
                 <tr class="total-row">
-                    <td colspan="2">Total</td>
+                    <td colspan="3">Total</td>
                     <td id="total-ac"></td>
                 </tr>
             </tbody>
         </table>
+        <div class="footer">
+            <p>最終更新 : 2024/12/12 04:00</p> 
+            <p>Since : 2022/08/19</p>
+        </div>
     </main>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('load', () => {
             const acCounts = document.querySelectorAll('.ac-count');
             let total = 0;
             acCounts.forEach(td => {
-                total += parseInt(td.textContent, 10);
+                const count = parseInt(td.textContent.trim(), 10);
+                if (!isNaN(count)) {
+                    total += count;
+                }
             });
             document.getElementById('total-ac').textContent = total;
         });
