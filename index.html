@@ -176,12 +176,6 @@
                     <td><a class="link-button disabled">no Link</a></td>
                 </tr>
                 <tr>
-                    <!-- <td><img src="images/omc_logo.png" alt="Online Math Contest" width="30"></td> -->
-                    <td>Online Math Contest</td>
-                    <td class="ac-count">250</td>
-                    <td><a class="link-button disabled">no Link</a></td>
-                </tr>
-                <tr>
                     <!-- <td><img src="images/project_euler_logo.png" alt="Project Euler" width="30"></td> -->
                     <td>Project Euler</td>
                     <td class="ac-count">100</td>
@@ -217,17 +211,17 @@
         </div>
     </main>
     <script>
-        // window.addEventListener('load', () => {
-        //     const acCounts = document.querySelectorAll('.ac-count');
-        //     let total = 0;
-        //     acCounts.forEach(td => {
-        //         const count = parseInt(td.textContent.trim(), 10);
-        //         if (!isNaN(count)) {
-        //             total += count;
-        //         }
-        //     });
-        //     document.getElementById('total-ac').textContent = total;
-        // });
+        window.addEventListener('load', () => {
+            const acCounts = document.querySelectorAll('.ac-count');
+            let total = 0;
+            acCounts.forEach(td => {
+                const count = parseInt(td.textContent.trim(), 10);
+                if (!isNaN(count)) {
+                    total += count;
+                }
+            });
+            document.getElementById('total-ac').textContent = total;
+        });
     </script>
 </body>
 </html>
